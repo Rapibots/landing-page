@@ -1,3 +1,7 @@
+## Color Theming
+
+Edit colors only in `app/globals.css` under the `:root` and `.dark` sections. Colors are defined as HSL triplets in CSS variables (e.g. `--hsl-primary`) and mapped to Tailwind tokens via `@theme` (e.g. `--color-primary`). Use them in components with classes like `bg-primary`, `text-text`, `bg-surface`, etc. To enable dark mode at runtime, toggle the `.dark` class on the `<html>` element.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

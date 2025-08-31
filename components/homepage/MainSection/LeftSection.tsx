@@ -1,8 +1,10 @@
+'use client';
+
 import Image, { StaticImageData } from 'next/image';
 
 import { Button } from '@/components/Button';
 import { ListItem } from '@/components/homepage/MainSection/ListItem';
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from '@/hooks/useMediaQuery';
 
 interface LeftSectionProps {
   items: {
@@ -19,7 +21,7 @@ export const LeftSection = ({
   openItem,
   setOpenItem,
 }: LeftSectionProps) => {
-  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+  const isMobile = useMediaQuery('(max-width: 768px)');
 
   return (
     <div className="flex w-full max-w-md flex-1 flex-col justify-between gap-12 py-12 pb-0 md:pb-12">
@@ -53,7 +55,7 @@ export const LeftSection = ({
               alt={item.title}
               width={400}
               height={400}
-              className="bg-neutral/10 mt-4 rounded-lg md:hidden"
+              className="bg-neutral/10 mt-8 rounded-lg md:hidden"
             />
           </ListItem>
         ))}

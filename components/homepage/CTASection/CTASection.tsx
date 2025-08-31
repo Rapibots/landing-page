@@ -7,9 +7,9 @@ import agent from '@/public/homepage/cta-section/agent.avif';
 
 export const CTASection = () => {
   return (
-    <section className="mb-8 w-full p-8 md:min-h-screen">
+    <section className="mb-8 w-full p-2 md:min-h-screen md:p-8">
       <div className="mx-auto flex w-full max-w-7xl flex-col flex-wrap gap-8 rounded-xl bg-stone-200/50 p-8 md:min-h-[80%] md:gap-4 md:p-16">
-        <h3 className="font-serif text-3xl lg:text-6xl">
+        <h3 className="font-serif text-3xl md:text-6xl">
           Control total de tu negocio,{' '}
           <span className="text-primary">en un solo lugar.</span>
         </h3>
@@ -18,8 +18,8 @@ export const CTASection = () => {
           y sencilla.
         </p>
         <Button className="self-center">Contáctanos</Button>
-        <div className="bg-secondary/60 relative my-6 grid w-full grid-cols-1 rounded-md p-4 md:grid-cols-2">
-          <div className="relative h-[60dvh] w-full">
+        <div className="bg-secondary/60 relative my-6 grid w-full grid-cols-1 overflow-hidden rounded-lg p-0 md:grid-cols-2 md:p-4">
+          <div className="relative h-[25dvh] w-full md:h-[60dvh]">
             <Image
               fill
               src={family}
@@ -27,7 +27,7 @@ export const CTASection = () => {
               className="object-cover brightness-40"
             />
           </div>
-          <div className="relative h-[60dvh] w-full">
+          <div className="relative h-[25dvh] w-full md:h-[60dvh]">
             <Image
               fill
               src={agent}
@@ -35,9 +35,9 @@ export const CTASection = () => {
               className="object-cover brightness-40"
             />
           </div>
-          <div className="absolute inset-0 flex items-center justify-center p-8">
-            <div className="flex items-center justify-center bg-neutral-300/50 p-8">
-              <p className="font-serif text-xl text-neutral-100">
+          <div className="absolute inset-0 flex items-center justify-center p-0 md:p-8">
+            <div className="flex items-center justify-center bg-neutral-50 p-2 md:bg-neutral-300/50 md:p-8">
+              <p className="text-center font-serif font-medium text-neutral-700 md:text-left md:text-xl md:text-neutral-100">
                 Mientras tu descansas, nuestros Rapibots trabajan por ti
               </p>
             </div>

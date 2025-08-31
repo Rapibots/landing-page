@@ -7,7 +7,7 @@ interface RightSectionProps {
 
 export const RightSection = ({ imageSource, alt }: RightSectionProps) => {
   return (
-    <div className="hidden h-full w-full flex-1 py-8 lg:block">
+    <div className="hidden h-full w-full flex-1 py-8 md:block">
       <div className="flex aspect-square items-center justify-center overflow-hidden rounded-xl bg-gray-100">
         <Image
           src={imageSource}

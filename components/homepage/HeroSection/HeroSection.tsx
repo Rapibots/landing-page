@@ -1,21 +1,12 @@
 'use client';
 
-import { motion, useScroll, useTransform } from 'motion/react';
+import { motion } from 'motion/react';
 import Image from 'next/image';
 
-import foreground from '@/public/homepage/hero-section/foreground.avif';
 import background from '@/public/homepage/hero-section/background.avif';
+import foreground from '@/public/homepage/hero-section/foreground.avif';
 
 export function HeroSection() {
-  const { scrollYProgress } = useScroll();
-
-  const titleY = useTransform(scrollYProgress, [0, 1], [0, -20]);
-  const titleOpacity = useTransform(
-    scrollYProgress,
-    [0, 0.6, 1],
-    [1, 0.95, 0.9],
-  );
-
   const skyInitial = { y: 100 };
   const skyAnimate = { y: 0 };
 
@@ -71,7 +62,6 @@ export function HeroSection() {
       <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-6xl flex-col items-center justify-center px-6 text-center">
         <motion.h1
           className="max-w-3xl font-serif text-4xl tracking-tight text-white sm:text-6xl md:text-7xl"
-          style={{ y: titleY, opacity: titleOpacity }}
           initial={textInitial}
           animate={textAnimate}
           transition={{ duration: 0.8, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
@@ -84,9 +74,8 @@ export function HeroSection() {
           animate={textAnimate}
           transition={{ duration: 0.8, delay: 0.75, ease: [0.22, 1, 0.36, 1] }}
         >
-          HappyRobot es una plataforma de IA que te ayuda a automatizar tu
-          negocio. Tú decides qué hacer y HappyRobot lo hace por ti, tú te
-          encargas de la mejor parte... cobrar.
+          Rapibots te ayuda a automatizar tu negocio. Tú decides qué hacer y
+          nuestros Rapibots lo hacen por ti, tú te encargas de la mejor parte...
         </motion.p>
       </div>
     </section>

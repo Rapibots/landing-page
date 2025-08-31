@@ -17,36 +17,29 @@ export const CTASection = () => {
           Nuestros Rapibots te ayudan a gestionar tu negocio de forma eficiente
           y sencilla.
         </p>
-        <Button className="self-center" />
-        <div className="bg-secondary/60 my-6 grid w-full grid-cols-1 rounded-md p-4 md:grid-cols-2">
+        <Button className="self-center">Contáctanos</Button>
+        <div className="bg-secondary/60 relative my-6 grid w-full grid-cols-1 rounded-md p-4 md:grid-cols-2">
           <div className="relative h-[60dvh] w-full">
             <Image
               fill
               src={family}
               alt="Family"
-              className="object-cover brightness-60"
+              className="object-cover brightness-40"
             />
-            <div className="absolute inset-0 flex items-center justify-center p-8">
-              <div className="flex items-center justify-center bg-neutral-300/50 p-8">
-                <p className="font-serif text-xl text-neutral-50">
-                  Mientras tu disfrutas con tu familia
-                </p>
-              </div>
-            </div>
           </div>
           <div className="relative h-[60dvh] w-full">
             <Image
               fill
               src={agent}
               alt="Agent"
-              className="object-cover brightness-50"
+              className="object-cover brightness-40"
             />
-            <div className="absolute inset-0 flex items-center justify-center p-8">
-              <div className="flex items-center justify-center bg-neutral-300/50 p-8">
-                <p className="font-serif text-xl text-neutral-100">
-                  Nuestros asistentes trabajan por ti
-                </p>
-              </div>
+          </div>
+          <div className="absolute inset-0 flex items-center justify-center p-8">
+            <div className="flex items-center justify-center bg-neutral-300/50 p-8">
+              <p className="font-serif text-xl text-neutral-100">
+                Mientras tu descansas, nuestros Rapibots trabajan por ti
+              </p>
             </div>
           </div>
         </div>

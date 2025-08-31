@@ -29,7 +29,7 @@ export const LeftSection = ({
           Creamos asistentes 100% personalizados para tu negocio en tiempo
           record.
         </p>
-        <Button />
+        <Button>Agenda una demo</Button>
       </div>
       <ul className="flex w-full flex-col items-start justify-start">
         {items.map((item, index) => (
